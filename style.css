@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    background: #FFFFFF;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background: #222222;
+}
+
+.link-novigation {
+    padding-top: 18px;
+    padding-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.home {
+    display: flex;
+    align-items: flex-end;
+    gap: 41px;
+}
+
+.novigation {
+    display: flex;
+    align-items: flex-end;
+    gap: 33px;
+}
+
+section {
+    background: #F1E4E6;
+}
+
+.preview {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.text-preview {
+    padding-top: 290px;
+    padding-left: 63px;
+}
+
+.border-preview {
+    border-left: 12px solid #F16D7F;
+    height: 93px;
+    padding-left: 16px;
+}
+
+.text-preview h1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.text-preview h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.color-preview {
+    color: #F16D7F;
+}
+
+.offers {
+    margin-top: 65px;
+    margin-bottom: 96px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.big {
+    grid-column: span 3;
+}
+
+.offer-1 {
+    background-image: url(./img/card1.svg);
+    position: relative;
+    background-size: 100%;
+}
+
+.offer-2 {
+    background-image: url(./img/card2.svg);
+    position: relative;
+    background-size: 100%;
+}
+
+.offer-3 {
+    background-image: url(./img/card3.svg);
+    position: relative;
+    background-size: 100%;
+}
+
+.offer-4 {
+    height: 180px;
+    background-image: url(./img/card4.svg);
+    position: relative;
+    background-size: 100%;
+}
+
+.text-offer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-offer p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.text-offer h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.text-content h2 {
+    margin-bottom: 6px;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.text-content p {
+    margin-bottom: 48px;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.goods {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.good {
+    background: #F8F8F8;
+}
+
+.text-good {
+    padding: 25px 29px 20px 16px;
+}
+
+.text-good h2 {
+    margin-bottom: 13px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.description {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.price {
+    margin-top: 18px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.btn {
+    margin: 49px 0 60px;
+    text-align: center;
+}
+
+button {
+    padding: 15px 39px;
+    background: #FFFFFF;
+    border: 1px solid #FF6A6A;
+    cursor: pointer;
+}
+
+.text-btn {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 736px;
+    }
+
+    .link-novigation {
+        padding-bottom: 19px;
+    }
+
+    .novigation {
+        position: relative;
+        gap: 25px;
+    }
+
+    .novigation-personal {
+        margin-right: 17px;
+    }
+
+    .preview {
+        height: 368px;
+    }
+
+    .text-preview {
+        padding-top: 138px;
+        padding-left: 39px;
+    }
+
+    .text-preview h1 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .text-preview h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .offers {
+        margin-bottom: 110px;
+        gap: 19px;
+    }
+
+    .offer-4 {
+        height: 116px;
+    }
+
+
+    .text-content h2 {
+        margin-bottom: 3px;
+    }
+
+    .text-content p {
+        margin-bottom: 73px;
+    }
+
+    .goods {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+
+    .btn {
+        margin: 33px 0 71px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .container {
+        width: 343px;
+    }
+
+    .novigation-basket {
+        display: none;
+    }
+
+    .novigation-personal {
+        display: none;
+    }
+
+    .preview {
+        height: 363px;
+    }
+
+    .text-preview {
+        padding-top: 148px;
+    }
+
+    .image-preview {
+        display: none;
+    }
+
+    .offers {
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .offer-1 {
+        width: 343px;
+    }
+
+    .offer-2 {
+        width: 343px;
+    }
+
+    .offer-3 {
+        width: 343px;
+    }
+
+    .offer-4 {
+        height: 111px;
+        background-image: url(./img/card4-1.svg);
+    }
+
+    .image-offer-4 {
+        transform: scale(1, 2.1);
+        height: 111px;
+    }
+
+    .text-content p {
+        margin-bottom: 65px;
+    }
+
+    .goods {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .btn {
+        margin: 40px 0 85px;
+    }
+
+}
